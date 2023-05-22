@@ -8,7 +8,7 @@ local keymap = vim.keymap -- for conciseness
 ---------------------
 
 -- use jk to exit insert mode
-keymap.set("i", "j", "<ESC>")
+keymap.set("i", "jk", "<ESC>")
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
@@ -57,6 +57,10 @@ keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current c
 -- restart lsp server (not on youtube nvim video)
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
 
--- save
-keymap.set("n", "<leader>ss", ":w")
+-- save and quit
+keymap.set("n", "<leader>ss", ":w<CR>")
 keymap.set("n", "<leader>sa", ":wa")
+keymap.set("n", "<leader>qq", ":q<CR>")
+
+-- bufferline tab close
+keymap.set("n", "<leader>tx", ":bdelete!<CR>")

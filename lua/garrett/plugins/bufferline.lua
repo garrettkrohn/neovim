@@ -1,11 +1,13 @@
 local bufferline = require("bufferline")
 bufferline.setup({
 	options = {
-		separator_style = "slant",
-		always_show_bufferline = false,
-		show_buffer_close_icons = false,
-		show_close_icon = false,
+		separator_style = "thick",
+		always_show_bufferline = true,
+		show_buffer_close_icons = true,
+		show_close_icon = true,
 		color_icons = true,
+		close_icons = true,
+		buffer_close_icon = "X",
 	},
 	highlights = {
 		separator = {
