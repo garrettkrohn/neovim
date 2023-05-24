@@ -12,6 +12,10 @@ end
 
 -- configure telescope
 telescope.setup({
+	file_ignore_patterns = {
+		"node%_modules/.*",
+		"vendor",
+	},
 	-- configure custom mappings
 	defaults = {
 		mappings = {

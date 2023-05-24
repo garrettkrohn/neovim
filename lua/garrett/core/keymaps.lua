@@ -59,7 +59,7 @@ keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if ne
 
 -- save and quit
 keymap.set("n", "<leader>ss", ":w<CR>")
-keymap.set("n", "<leader>sa", ":wa")
+keymap.set("n", "<leader>sa", ":wa<CR>")
 keymap.set("n", "<leader>qq", ":q<CR>")
 
 -- bufferline tab close
