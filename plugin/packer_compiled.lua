@@ -84,14 +84,6 @@ _G.packer_plugins = {
     path = "/Users/garrettkrohn/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["barbecue.nvim"] = {
-    config = { "\27LJ\2\nT\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\ntheme\21monokai-spectrum\nsetup\rbarbecue\frequire\0" },
-    load_after = {},
-    loaded = true,
-    needs_bufread = false,
-    path = "/Users/garrettkrohn/.local/share/nvim/site/pack/packer/opt/barbecue.nvim",
-    url = "https://github.com/utilyre/barbecue.nvim"
-  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/Users/garrettkrohn/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -131,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/garrettkrohn/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
     url = "https://github.com/onsails/lspkind.nvim"
+  },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "/Users/garrettkrohn/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    url = "https://github.com/glepnir/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -177,11 +174,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/garrettkrohn/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-navic"] = {
-    loaded = true,
-    path = "/Users/garrettkrohn/.local/share/nvim/site/pack/packer/start/nvim-navic",
-    url = "https://github.com/SmiteshP/nvim-navic"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -266,12 +258,6 @@ time([[Config for monokai-pro.nvim]], false)
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]
 vim.cmd [[ packadd nvim-ts-autotag ]]
-vim.cmd [[ packadd nvim-web-devicons ]]
-vim.cmd [[ packadd barbecue.nvim ]]
-
--- Config for: barbecue.nvim
-try_loadstring("\27LJ\2\nT\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\ntheme\21monokai-spectrum\nsetup\rbarbecue\frequire\0", "config", "barbecue.nvim")
-
 time([[Sequenced loading]], false)
 
 _G._packer.inside_compile = false
