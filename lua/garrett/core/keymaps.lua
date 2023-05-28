@@ -64,3 +64,6 @@ keymap.set("n", "<leader>qq", ":q<CR>")
 
 -- bufferline tab close
 keymap.set("n", "<leader>tx", ":bdelete!<CR>")
+
+-- lazygit keybind
+keymap.set("n", "<leader>gg", ":LazyGit<CR>")

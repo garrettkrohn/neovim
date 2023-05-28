@@ -118,6 +118,15 @@ return packer.startup(function(use)
 
 	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
 
+	-- nvim v0.7.2
+	use({
+		"kdheepak/lazygit.nvim",
+		-- optional for floating window border decoration
+		requires = {
+			"nvim-lua/plenary.nvim",
+		},
+	})
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
